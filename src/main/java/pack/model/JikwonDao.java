@@ -19,7 +19,7 @@ public class JikwonDao {
 	public JikwonDao() {
 	}
 	
-	public ArrayList<JikwonDto> getDataAll(String num) {
+	public ArrayList<JikwonDto> getDataSelect(String num) {
 		ArrayList<JikwonDto> list = new ArrayList<JikwonDto>();
 		
 		try {

@@ -20,7 +20,7 @@ public class JikwonController {
 	@RequestMapping("jikwondb")
 	public ModelAndView jikwonProcess(HttpServletRequest request) {
 		String num = request.getParameter("no");
-		ArrayList<JikwonDto> list = jikwonDao.getDataAll(num);
+		ArrayList<JikwonDto> list = jikwonDao.getDataSelect(num);
 		
 		return new ModelAndView("jikwon", "datase", list);
 	}
